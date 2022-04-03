@@ -38,12 +38,12 @@ fun serveDrinks(age:Int){
 }
 fun digits() {
     for (b in 1..100) {
-        if (b % 3 == 0) {
-            println("Fizz")
+        if (b % 3 == 0 && b % 5 == 0) {
+            println("FizzBuzz")
         } else if (b % 5 == 0) {
             println("Buzz")
-        } else if (b % 3 == 0 && b % 5 == 0) {
-            println("FizzBuzz")
+        } else if (b % 3 == 0){
+            println("Fizz")
         }
         else{
             println(b)
